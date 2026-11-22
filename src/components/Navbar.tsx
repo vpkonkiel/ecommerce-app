@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 const Navbar = () => {
     return (
-        <div className="">
+        <nav className="w-full flex items-center justify-between border-b border-gray-200 pb-1">
             {/* Left side of Navbar */}
-                <Link href='/'>
+                <Link href='/' className='flex items-center'>
                     <Image 
                         src='/e-conomical-logo.svg' 
                         alt='E-Conomical Logo'
@@ -18,8 +18,11 @@ const Navbar = () => {
             {/* End of Left side of Navbar */}
 
             {/* Right side of Navbar */}
+            <div className='flex items-center'>
+                Right
+            </div>
             {/* End of Right side of Navbar */}
-        </div>
+        </nav>
     )
 };
 
